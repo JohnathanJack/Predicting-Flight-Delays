@@ -1,3 +1,10 @@
+import numpy as np
+import pandas as pd
+import os
+import json
+import requests
+
+
 def lat_lon_api(city):
     """
     Returns the JSON response of an API call from position stack
