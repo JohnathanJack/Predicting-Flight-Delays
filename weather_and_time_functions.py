@@ -30,7 +30,7 @@ def lat_grabber(df):
     Returns the latitude and longitude in a list from a dataframe containing a specific location
 
     Parameters:
-        df(pandas dataframe)
+        df(pandas dataframe): requires column named origin_city_name
 
     Returns:
         List of latitudes and longitudes (floats)
@@ -86,7 +86,7 @@ def weather_grabber(data):
     Returns the sunny%,cloud%, average snow fall and average rain fall of a specific date
 
     Parameters:
-        data(pandas dataframe)
+        data(pandas dataframe): Required date in first column, latitude in second last column and longitude in last column
 
     Returns:
         List of cloud%, rainfall(mm),snowfall(mm),sunny% (floats)
@@ -115,7 +115,7 @@ def obtain_arrival_hour(df):
     Returns the arrival hour from a string in a dataframe
 
     Parameters:
-        data(pandas dataframe)
+        data(pandas dataframe): requires column named crs_arr_time
 
     Returns:
         List of the extracted hour from a string (floats)
@@ -140,7 +140,7 @@ def obtain_depart_hour(df):
     Returns the departure hour from a string in a dataframe
 
     Parameters:
-        data(pandas dataframe)
+        data(pandas dataframe): requires column named crs_dep_time
 
     Returns:
         List of the extracted hour from a string (floats)
