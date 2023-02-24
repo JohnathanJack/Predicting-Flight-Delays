@@ -10,8 +10,26 @@ Create Visuals on insights and continue testing models.
 Clean up files and prepare presentation on findings.
 
 ## Results
+Decided on using random forest and XGBoost.
+Random forest:
+Parameters: crs_elapsed_time, distance, month, departing hour, arrival hour, origin, destination and op_unique_carrier 
+R2 Score: 0.005
+Mean Squared Error: 2478.71
+Root Mean Squared Error: 49.79
+
+XGBoost:
+Parameters: crs_elapsed_time, distance, month, departing hour, arrival hour, origin, destination and op_unique_carrier 
+R2 Score: 0.013
+Mean Squared Error: 2272.64
+Root Mean Squared Error: 47.67
+
+## Challenges
+Understanding the hyperparameters of different machine learning models, and how to optimize them.
+Forging new features that are important and increases model accuracy.
+Limitations for weather and location API. Not feasable to create a table of more than 500 weather forecasts.
 
 
 ## Future Goals
 Continue experimenting with features until the results from the models resemble usable information.
-Try more models, and experiment with binary classification.
+Complete classification problem deciding on flight cancellation.
+Try more regression models, and experiment with binary classification.
